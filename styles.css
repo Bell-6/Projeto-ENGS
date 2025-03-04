@@ -1,3 +1,10 @@
+:root {
+
+--cor--header: #5b84c4;
+--cor-button:#FB9B50;
+
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,12 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 200vh;
-    
 }
 
 
 header {
-    background-color: #05bca7;
+    background-color: var(--cor--header);
     color: white;
     padding: 1em;
 }
@@ -31,18 +37,30 @@ header {
 }
 
 
-
 main {
     flex: 1;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
+form{
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #0e0d0d;
+    margin: 1000px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+}
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 input, textarea {
@@ -53,20 +71,17 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
-    background-color: #05bca7;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-
 h2{
     margin: 4px;
     text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.text_attention{
+ text-align: center;
 }
 
 a {
@@ -74,17 +89,26 @@ a {
 }
 
 button {
-    background-color: #05bca7;
+    background-color: var(--cor-button);
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 40px;
     margin-top: 10px;
     cursor: pointer;
     font-size: 16px; 
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.50s ease;
+    margin-top: 40px; 
 }
 
 button:hover {
-    background-color: #259b8d;
+    background-color: var(--cor--header);
+}
+
+footer {
+    background-color: var(--cor--header);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    margin-top: 10px;
 }
