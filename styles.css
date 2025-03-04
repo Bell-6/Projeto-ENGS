@@ -53,17 +53,6 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
-    background-color: #05bca7;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-
 h2{
     margin: 4px;
     text-align: center;
@@ -82,7 +71,6 @@ button {
     margin-top: 10px;
     cursor: pointer;
     font-size: 16px; 
-    transition: background-color 0.3s ease; 
 }
 
 button:hover {
